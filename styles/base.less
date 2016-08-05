@@ -1,0 +1,200 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+.comment {
+  color: #FD6209;
+}
+
+.constant {
+  font-weight: bold;
+  font-style: italic;
+  color: #9CF340;
+}
+
+.keyword {
+  color: #96DD3B;
+}
+
+.keyword.control.import.python, .keyword.control.import.from.python {
+  color: #FFB454;
+}
+
+.entity {
+  color: #FEC758;
+}
+
+.storage {
+  font-weight: bold;
+  color: #FFE862;
+}
+
+.string {
+  font-style: italic;
+  color: #E1FFB8;
+}
+
+.support {
+  color: #9DF39F;
+}
+
+.variable {
+  font-weight: bold;
+  font-style: italic;
+  color: #FB9A4B;
+}
+
+.invalid {
+  background-color: #94DA3A;
+}
+
+.text .source {
+  background-color: rgba(176, 179, 186, 0.08);
+}
+
+.text.html.ruby .source {
+  background-color: rgba(177, 179, 186, 0.13);
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #FFE862;
+}
+
+.string.quoted .source {
+  color: #9DF39F;
+}
+
+.string .constant {
+  color: #FFE862;
+}
+
+.string.regexp {
+  color: #FFB454;
+}
+
+.string .variable {
+  color: #EDEF7D;
+}
+
+.support.function {
+  color: #FFE862;
+}
+
+.support.constant {
+  color: #EB939A;
+}
+
+.declaration.sgml.html .declaration.doctype, .declaration.sgml.html .declaration.doctype .entity, .declaration.sgml.html .declaration.doctype .string, .declaration.xml-processing, .declaration.xml-processing .entity, .declaration.xml-processing .string {
+  color: #989898;
+}
+
+.declaration.tag, .declaration.tag .entity, .meta.tag, .meta.tag .entity {
+  color: #E8E8E7;
+}
+
+.meta.selector.css .entity.name.tag {
+  color: #AA5507;
+  background-color: #245032;
+}
+
+.meta.selector.css .entity.other.attribute-name.id {
+  color: #FEC758;
+}
+
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #41A83E;
+}
+
+.support.type.property-name.css {
+  color: #96DD3B;
+}
+
+.meta.property-group .support.constant.property-value.css, .meta.property-value .support.constant.property-value.css {
+  font-style: italic;
+  color: #FFE862;
+}
+
+.meta.property-value .support.constant.named-color.css, .meta.property-value .constant {
+  color: #FFE862;
+}
+
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #FD6209;
+}
+
+.meta.constructor.argument.css {
+  color: #EC9799;
+}
+
+.meta.diff, .meta.diff.header {
+  font-style: italic;
+  color: #F8F8F8;
+  background-color: #0B2F20;
+}
+
+.markup.deleted {
+  color: #EC9799;
+  background-color: #FEDCDD;
+}
+
+.markup.changed {
+  color: #F8F8F8;
+  background-color: #C4B14A;
+}
+
+.markup.inserted {
+  color: #41A83E;
+  background-color: #9BF199;
+}
